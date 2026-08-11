@@ -1,7 +1,7 @@
 {
   "name": "bcb-exchange-rate",
-  "version": "1.0.1",
-  "description": "Official Banco Central do Brasil (Brazil) daily exchange rates — 10 currencies vs BRL, history since 2016. Zero-dependency Node.js/TypeScript client.",
+  "version": "1.1.2",
+  "description": "Official Banco Central do Brasil (Brazil) daily exchange rates — 156 currencies vs BRL, history since 2016. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "bcb",
     "banco",
