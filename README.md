@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'BRL', { apiKey: 'art_live_...' });
 {
   bank: 'bcb',
   name: 'Banco Central do Brasil',
-  rate_date: '2026-09-09',   // Banco Central do Brasil's own publication date
+  rate_date: '2026-09-25',   // Banco Central do Brasil's own publication date
   source: 'USD',
   target: 'BRL',
-  rate: 5.0979,
+  rate: 5.1991,
   rate_type: 'sell',
   derived: false,
   method: 'published',
@@ -113,10 +113,10 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bcb',
   name: 'Banco Central do Brasil',
-  rate_date: '2026-09-09',
+  rate_date: '2026-09-25',
   rates: [
-    { "base": "USD", "quote": "BRL", "type": "sell", "value": 5.0979 },
-    { "base": "USD", "quote": "BRL", "type": "buy", "value": 5.0973 },
+    { "base": "USD", "quote": "BRL", "type": "sell", "value": 5.1991 },
+    { "base": "USD", "quote": "BRL", "type": "buy", "value": 5.1985 },
     // … the rest of the published table (156 currencies vs BRL)
   ],
   disclaimer: '…'
@@ -156,7 +156,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bcb-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'BRL', from: '2026-01-01', to: '2026-09-09' },
+  { source: 'USD', target: 'BRL', from: '2026-01-01', to: '2026-09-25' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -169,11 +169,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'BRL',
   from: '2026-01-01',
-  to: '2026-09-09',
+  to: '2026-09-25',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-09', rate: 5.0979, rate_type: 'sell', derived: false, method: 'published' },
+    { date: '2026-09-25', rate: 5.1991, rate_type: 'sell', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
