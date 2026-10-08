@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'BRL', { apiKey: 'art_live_...' });
 {
   bank: 'bcb',
   name: 'Banco Central do Brasil',
-  rate_date: '2026-10-06',   // Banco Central do Brasil's own publication date
+  rate_date: '2026-10-08',   // Banco Central do Brasil's own publication date
   source: 'USD',
   target: 'BRL',
-  rate: 4.9698,
+  rate: 5.0119,
   rate_type: 'sell',
   derived: false,
   method: 'published',
@@ -113,10 +113,10 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bcb',
   name: 'Banco Central do Brasil',
-  rate_date: '2026-10-06',
+  rate_date: '2026-10-08',
   rates: [
-    { "base": "USD", "quote": "BRL", "type": "sell", "value": 4.9698 },
-    { "base": "USD", "quote": "BRL", "type": "buy", "value": 4.9692 },
+    { "base": "USD", "quote": "BRL", "type": "sell", "value": 5.0119 },
+    { "base": "USD", "quote": "BRL", "type": "buy", "value": 5.0113 },
     // … the rest of the published table (156 currencies vs BRL)
   ],
   disclaimer: '…'
@@ -156,7 +156,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bcb-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'BRL', from: '2026-01-01', to: '2026-10-06' },
+  { source: 'USD', target: 'BRL', from: '2026-01-01', to: '2026-10-08' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -169,11 +169,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'BRL',
   from: '2026-01-01',
-  to: '2026-10-06',
+  to: '2026-10-08',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-06', rate: 4.9698, rate_type: 'sell', derived: false, method: 'published' },
+    { date: '2026-10-08', rate: 5.0119, rate_type: 'sell', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -223,6 +223,7 @@ curl "https://allratestoday.com/api/v1/central-bank/bcb/latest?format=xml&api_ke
 
 - MCP server: `npx -y @allratestoday/central-bank-mcp` (stdio) or the hosted endpoint `https://allratestoday.com/api/mcp` — tools for official rates, history, cross-bank comparison and publication calendars
 - Already using the general SDK or MCP server? Since 2026-10-01 [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk) 1.4+ has `officialRates('bcb')` and [`@allratestoday/mcp-server`](https://www.npmjs.com/package/@allratestoday/mcp-server) 0.6+ has a `get_official_rates` tool — both return this source's latest table with no key, so you can add it without a second dependency
+- Claude Code plugin (no key): `/plugin marketplace add AllRates-Today/claude-code-plugin` then `/plugin install allratestoday@allratestoday` — bundles both MCP servers plus an `/official-rate bcb ...` command
 - Machine-readable site guide: [llms.txt](https://allratestoday.com/llms.txt) · [for-ai-agents](https://allratestoday.com/for-ai-agents/)
 
 ## ⚖️ Published vs derived rates
