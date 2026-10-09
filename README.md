@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/bcb-exchange-rate.svg)](https://github.com/AllRates-Today/bcb-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/bcb-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/BRL today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbcb%3Fsource%3DUSD%26target%3DBRL&query=%24.rate&label=USD%2FBRL%20published%20by%20Banco%20Central%20do%20Brasil&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bcb/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbcb%3Fsource%3DUSD%26target%3DBRL&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bcb/)
 
 **Official Banco Central do Brasil (Brazil) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Banco Central do Brasil itself prints, every business day.**
 
@@ -32,6 +34,79 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Banco Central do Brasil table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-08** by Banco Central do Brasil — 312 rates, first 60 shown. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | BRL | buy | 1.3644 |
+| AED | BRL | sell | 1.3647 |
+| AFN | BRL | buy | 0.07714 |
+| AFN | BRL | sell | 0.07739 |
+| ALL | BRL | buy | 0.06078 |
+| ALL | BRL | sell | 0.06146 |
+| AMD | BRL | buy | 0.01381 |
+| AMD | BRL | sell | 0.01388 |
+| AOA | BRL | buy | 0.005409 |
+| AOA | BRL | sell | 0.00549 |
+| ARS | BRL | buy | 0.003299 |
+| ARS | BRL | sell | 0.003302 |
+| AUD | BRL | buy | 3.4814 |
+| AUD | BRL | sell | 3.4823 |
+| AWG | BRL | buy | 2.7841 |
+| AWG | BRL | sell | 2.8157 |
+| AZN | BRL | buy | 2.9392 |
+| AZN | BRL | sell | 2.9569 |
+| BBD | BRL | buy | 2.4685 |
+| BBD | BRL | sell | 2.5083 |
+| BDT | BRL | buy | 0.04058 |
+| BDT | BRL | sell | 0.04071 |
+| BHD | BRL | buy | 13.2785 |
+| BHD | BRL | sell | 13.2906 |
+| BIF | BRL | buy | 0.001663 |
+| BIF | BRL | sell | 0.001678 |
+| BMD | BRL | buy | 5.0113 |
+| BMD | BRL | sell | 5.0119 |
+| BND | BRL | buy | 3.9087 |
+| BND | BRL | sell | 3.9097 |
+| BOB | BRL | buy | 0.4169 |
+| BOB | BRL | sell | 0.4222 |
+| BSD | BRL | buy | 5.0113 |
+| BSD | BRL | sell | 5.0119 |
+| BTN | BRL | buy | 0.05178 |
+| BTN | BRL | sell | 0.05179 |
+| BWP | BRL | buy | 0.3443 |
+| BWP | BRL | sell | 0.3839 |
+| BYN | BRL | buy | 1.6416 |
+| BYN | BRL | sell | 1.6487 |
+| BZD | BRL | buy | 2.4781 |
+| BZD | BRL | sell | 2.5057 |
+| CAD | BRL | buy | 3.5169 |
+| CAD | BRL | sell | 3.5181 |
+| CDF | BRL | buy | 0.00216 |
+| CDF | BRL | sell | 0.002171 |
+| CHF | BRL | buy | 6.0124 |
+| CHF | BRL | sell | 6.0138 |
+| CLF | BRL | buy | 210.1038 |
+| CLF | BRL | sell | 210.1289 |
+| CLP | BRL | buy | 0.005109 |
+| CLP | BRL | sell | 0.005115 |
+| CNH | BRL | buy | 0.7473 |
+| CNH | BRL | sell | 0.7474 |
+| CNY | BRL | buy | 0.7477 |
+| CNY | BRL | sell | 0.7478 |
+| COP | BRL | buy | 0.001557 |
+| COP | BRL | sell | 0.001558 |
+| COU | BRL | buy | 0.6485 |
+| COU | BRL | sell | 0.6485 |
+
+[Full table on the Banco Central do Brasil rates page](https://allratestoday.com/central-bank-rates-api/bcb/) · Source: [Official rates published by BCB, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bcb/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
