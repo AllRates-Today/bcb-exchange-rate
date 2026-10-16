@@ -42,70 +42,70 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-15** by Banco Central do Brasil — 312 rates, first 60 shown. Updated 2026-10-15.
+Published **2026-10-16** by Banco Central do Brasil — 312 rates, first 60 shown. Updated 2026-10-16.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | BRL | buy | 1.3753 |
-| AED | BRL | sell | 1.3756 |
-| AFN | BRL | buy | 0.07768 |
-| AFN | BRL | sell | 0.07793 |
-| ALL | BRL | buy | 0.06183 |
-| ALL | BRL | sell | 0.06226 |
-| AMD | BRL | buy | 0.01394 |
-| AMD | BRL | sell | 0.01401 |
-| AOA | BRL | buy | 0.005453 |
-| AOA | BRL | sell | 0.005534 |
-| ARS | BRL | buy | 0.003339 |
-| ARS | BRL | sell | 0.00334 |
-| AUD | BRL | buy | 3.4921 |
-| AUD | BRL | sell | 3.493 |
-| AWG | BRL | buy | 2.8064 |
-| AWG | BRL | sell | 2.8383 |
-| AZN | BRL | buy | 2.9628 |
-| AZN | BRL | sell | 2.9806 |
-| BBD | BRL | buy | 2.4883 |
-| BBD | BRL | sell | 2.5285 |
-| BDT | BRL | buy | 0.04087 |
-| BDT | BRL | sell | 0.04128 |
-| BHD | BRL | buy | 13.3708 |
-| BHD | BRL | sell | 13.383 |
-| BIF | BRL | buy | 0.00168 |
-| BIF | BRL | sell | 0.001695 |
-| BMD | BRL | buy | 5.0515 |
-| BMD | BRL | sell | 5.0521 |
-| BND | BRL | buy | 3.9376 |
-| BND | BRL | sell | 3.9383 |
-| BOB | BRL | buy | 0.4299 |
-| BOB | BRL | sell | 0.4355 |
-| BSD | BRL | buy | 5.0515 |
-| BSD | BRL | sell | 5.0521 |
-| BTN | BRL | buy | 0.05314 |
-| BTN | BRL | sell | 0.05315 |
-| BWP | BRL | buy | 0.3486 |
-| BWP | BRL | sell | 0.3885 |
-| BYN | BRL | buy | 1.6671 |
-| BYN | BRL | sell | 1.6777 |
-| BZD | BRL | buy | 2.498 |
-| BZD | BRL | sell | 2.5258 |
-| CAD | BRL | buy | 3.5571 |
-| CAD | BRL | sell | 3.5586 |
-| CDF | BRL | buy | 0.002177 |
-| CDF | BRL | sell | 0.002194 |
-| CHF | BRL | buy | 6.0869 |
-| CHF | BRL | sell | 6.0891 |
-| CLF | BRL | buy | 211.1578 |
-| CLF | BRL | sell | 211.1828 |
-| CLP | BRL | buy | 0.00513 |
-| CLP | BRL | sell | 0.005131 |
-| CNH | BRL | buy | 0.755 |
-| CNH | BRL | sell | 0.7552 |
-| CNY | BRL | buy | 0.7549 |
-| CNY | BRL | sell | 0.7551 |
-| COP | BRL | buy | 0.001594 |
-| COP | BRL | sell | 0.001595 |
-| COU | BRL | buy | 0.6628 |
-| COU | BRL | sell | 0.6628 |
+| AED | BRL | buy | 1.3836 |
+| AED | BRL | sell | 1.3838 |
+| AFN | BRL | buy | 0.07815 |
+| AFN | BRL | sell | 0.0784 |
+| ALL | BRL | buy | 0.06232 |
+| ALL | BRL | sell | 0.06294 |
+| AMD | BRL | buy | 0.01399 |
+| AMD | BRL | sell | 0.01407 |
+| AOA | BRL | buy | 0.005486 |
+| AOA | BRL | sell | 0.005567 |
+| ARS | BRL | buy | 0.003358 |
+| ARS | BRL | sell | 0.003359 |
+| AUD | BRL | buy | 3.5315 |
+| AUD | BRL | sell | 3.5324 |
+| AWG | BRL | buy | 2.8233 |
+| AWG | BRL | sell | 2.8554 |
+| AZN | BRL | buy | 2.9806 |
+| AZN | BRL | sell | 2.9986 |
+| BBD | BRL | buy | 2.5033 |
+| BBD | BRL | sell | 2.5437 |
+| BDT | BRL | buy | 0.04112 |
+| BDT | BRL | sell | 0.04152 |
+| BHD | BRL | buy | 13.4551 |
+| BHD | BRL | sell | 13.4674 |
+| BIF | BRL | buy | 0.001688 |
+| BIF | BRL | sell | 0.001702 |
+| BMD | BRL | buy | 5.082 |
+| BMD | BRL | sell | 5.0826 |
+| BND | BRL | buy | 3.9706 |
+| BND | BRL | sell | 3.9714 |
+| BOB | BRL | buy | 0.4321 |
+| BOB | BRL | sell | 0.4378 |
+| BSD | BRL | buy | 5.082 |
+| BSD | BRL | sell | 5.0826 |
+| BTN | BRL | buy | 0.05351 |
+| BTN | BRL | sell | 0.05352 |
+| BWP | BRL | buy | 0.3517 |
+| BWP | BRL | sell | 0.3924 |
+| BYN | BRL | buy | 1.6887 |
+| BYN | BRL | sell | 1.6945 |
+| BZD | BRL | buy | 2.5131 |
+| BZD | BRL | sell | 2.541 |
+| CAD | BRL | buy | 3.5895 |
+| CAD | BRL | sell | 3.5902 |
+| CDF | BRL | buy | 0.002191 |
+| CDF | BRL | sell | 0.002207 |
+| CHF | BRL | buy | 6.1645 |
+| CHF | BRL | sell | 6.1667 |
+| CLF | BRL | buy | 212.5547 |
+| CLF | BRL | sell | 212.5797 |
+| CLP | BRL | buy | 0.005163 |
+| CLP | BRL | sell | 0.005166 |
+| CNH | BRL | buy | 0.7601 |
+| CNH | BRL | sell | 0.7602 |
+| CNY | BRL | buy | 0.7601 |
+| CNY | BRL | sell | 0.7602 |
+| COP | BRL | buy | 0.001597 |
+| COP | BRL | sell | 0.001598 |
+| COU | BRL | buy | 0.6729 |
+| COU | BRL | sell | 0.6729 |
 
 [Full table on the Banco Central do Brasil rates page](https://allratestoday.com/central-bank-rates-api/bcb/) · Source: [Official rates published by BCB, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bcb/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -301,7 +301,7 @@ curl "https://allratestoday.com/api/v1/central-bank/bcb/latest?format=xml&api_ke
 - MCP server: `npx -y @allratestoday/central-bank-mcp` (stdio) or the hosted endpoint `https://allratestoday.com/api/mcp` — tools for official rates, history, cross-bank comparison and publication calendars
 - Already using the general SDK or MCP server? Since 2026-10-01 [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk) 1.4+ has `officialRates('bcb')` and [`@allratestoday/mcp-server`](https://www.npmjs.com/package/@allratestoday/mcp-server) 0.6+ has a `get_official_rates` tool — both return this source's latest table with no key, so you can add it without a second dependency
 - Claude Code plugin (no key): `/plugin marketplace add AllRates-Today/claude-code-plugin` then `/plugin install allratestoday@allratestoday` — bundles both MCP servers plus an `/official-rate bcb ...` command
-- Need dated tables or history for an evaluation? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days; the MCP servers expose it as `request_trial_key`
+- Evaluating? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days that covers the free-plan methods (latest table, pairs); dated tables and history need a [paid plan](https://allratestoday.com/pricing/). The MCP servers expose it as `request_trial_key`
 - Machine-readable site guide: [llms.txt](https://allratestoday.com/llms.txt) · [for-ai-agents](https://allratestoday.com/for-ai-agents/)
 
 ## ⚖️ Published vs derived rates
