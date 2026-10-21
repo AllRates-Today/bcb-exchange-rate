@@ -37,7 +37,7 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/bcb').the
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
 
 ## 📈 Latest published table
 
@@ -47,70 +47,70 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-20 by Banco Central do Brasil — 312 rates, first 60 shown. Updated 2026-10-20.</summary>
+<summary>Table as text: published 2026-10-21 by Banco Central do Brasil — 312 rates, first 60 shown. Updated 2026-10-21.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | BRL | buy | 1.365 |
-| AED | BRL | sell | 1.3653 |
-| AFN | BRL | buy | 0.07709 |
-| AFN | BRL | sell | 0.07734 |
-| ALL | BRL | buy | 0.06188 |
-| ALL | BRL | sell | 0.06236 |
-| AMD | BRL | buy | 0.01383 |
-| AMD | BRL | sell | 0.01391 |
-| AOA | BRL | buy | 0.005412 |
-| AOA | BRL | sell | 0.005492 |
-| ARS | BRL | buy | 0.003289 |
-| ARS | BRL | sell | 0.003291 |
-| AUD | BRL | buy | 3.5109 |
-| AUD | BRL | sell | 3.5118 |
-| AWG | BRL | buy | 2.7852 |
-| AWG | BRL | sell | 2.8169 |
-| AZN | BRL | buy | 2.9404 |
-| AZN | BRL | sell | 2.9581 |
-| BBD | BRL | buy | 2.4695 |
-| BBD | BRL | sell | 2.5094 |
-| BDT | BRL | buy | 0.04046 |
-| BDT | BRL | sell | 0.04062 |
-| BHD | BRL | buy | 13.284 |
-| BHD | BRL | sell | 13.2997 |
-| BIF | BRL | buy | 0.001665 |
-| BIF | BRL | sell | 0.001678 |
-| BMD | BRL | buy | 5.0134 |
-| BMD | BRL | sell | 5.014 |
-| BND | BRL | buy | 3.9235 |
-| BND | BRL | sell | 3.9242 |
+| AED | BRL | buy | 1.3687 |
+| AED | BRL | sell | 1.369 |
+| AFN | BRL | buy | 0.07728 |
+| AFN | BRL | sell | 0.07753 |
+| ALL | BRL | buy | 0.06168 |
+| ALL | BRL | sell | 0.06257 |
+| AMD | BRL | buy | 0.01387 |
+| AMD | BRL | sell | 0.01395 |
+| AOA | BRL | buy | 0.005426 |
+| AOA | BRL | sell | 0.005507 |
+| ARS | BRL | buy | 0.003292 |
+| ARS | BRL | sell | 0.003294 |
+| AUD | BRL | buy | 3.5315 |
+| AUD | BRL | sell | 3.5325 |
+| AWG | BRL | buy | 2.7928 |
+| AWG | BRL | sell | 2.8246 |
+| AZN | BRL | buy | 2.9484 |
+| AZN | BRL | sell | 2.9662 |
+| BBD | BRL | buy | 2.4762 |
+| BBD | BRL | sell | 2.5162 |
+| BDT | BRL | buy | 0.04057 |
+| BDT | BRL | sell | 0.04073 |
+| BHD | BRL | buy | 13.3166 |
+| BHD | BRL | sell | 13.3325 |
+| BIF | BRL | buy | 0.001669 |
+| BIF | BRL | sell | 0.001683 |
+| BMD | BRL | buy | 5.027 |
+| BMD | BRL | sell | 5.0277 |
+| BND | BRL | buy | 3.9338 |
+| BND | BRL | sell | 3.9347 |
 | BOB | BRL | buy | 0.4249 |
-| BOB | BRL | sell | 0.4304 |
-| BSD | BRL | buy | 5.0134 |
-| BSD | BRL | sell | 5.014 |
-| BTN | BRL | buy | 0.0528 |
-| BTN | BRL | sell | 0.05283 |
-| BWP | BRL | buy | 0.3474 |
-| BWP | BRL | sell | 0.3876 |
-| BYN | BRL | buy | 1.6809 |
-| BYN | BRL | sell | 1.6876 |
-| BZD | BRL | buy | 2.4792 |
-| BZD | BRL | sell | 2.5067 |
-| CAD | BRL | buy | 3.5685 |
-| CAD | BRL | sell | 3.5692 |
-| CDF | BRL | buy | 0.002161 |
-| CDF | BRL | sell | 0.002178 |
-| CHF | BRL | buy | 6.0688 |
-| CHF | BRL | sell | 6.0717 |
-| CLF | BRL | buy | 211.9465 |
-| CLF | BRL | sell | 211.9719 |
-| CLP | BRL | buy | 0.005145 |
-| CLP | BRL | sell | 0.00515 |
-| CNH | BRL | buy | 0.751 |
-| CNH | BRL | sell | 0.7512 |
-| CNY | BRL | buy | 0.7507 |
-| CNY | BRL | sell | 0.7508 |
-| COP | BRL | buy | 0.001573 |
-| COP | BRL | sell | 0.001574 |
-| COU | BRL | buy | 0.6668 |
-| COU | BRL | sell | 0.6669 |
+| BOB | BRL | sell | 0.4305 |
+| BSD | BRL | buy | 5.027 |
+| BSD | BRL | sell | 5.0277 |
+| BTN | BRL | buy | 0.05321 |
+| BTN | BRL | sell | 0.05323 |
+| BWP | BRL | buy | 0.3479 |
+| BWP | BRL | sell | 0.3881 |
+| BYN | BRL | buy | 1.6883 |
+| BYN | BRL | sell | 1.7004 |
+| BZD | BRL | buy | 2.4859 |
+| BZD | BRL | sell | 2.5136 |
+| CAD | BRL | buy | 3.5741 |
+| CAD | BRL | sell | 3.5754 |
+| CDF | BRL | buy | 0.002167 |
+| CDF | BRL | sell | 0.002184 |
+| CHF | BRL | buy | 6.0904 |
+| CHF | BRL | sell | 6.0927 |
+| CLF | BRL | buy | 211.3954 |
+| CLF | BRL | sell | 211.4248 |
+| CLP | BRL | buy | 0.005132 |
+| CLP | BRL | sell | 0.005139 |
+| CNH | BRL | buy | 0.7532 |
+| CNH | BRL | sell | 0.7533 |
+| CNY | BRL | buy | 0.753 |
+| CNY | BRL | sell | 0.7531 |
+| COP | BRL | buy | 0.001579 |
+| COP | BRL | sell | 0.00158 |
+| COU | BRL | buy | 0.6671 |
+| COU | BRL | sell | 0.6672 |
 
 </details>
 
